@@ -41,12 +41,13 @@
 ---
 
 ## Endpoint Disponivel</h2>
->**- Este endpoint busca receitas da API RecipePuppy baseado nos ingredentes passados como query params. <br>**
->**- Para cada receita uma GIF é buscada do Giphy baseada no titulo da receita. <br>**
->**- São aceitos no **máximo 3 ingredientes**. <br>**
 ```JSON
 GET: localhost:3000/recipes/?i=param1,param2,param3
 ```
+
+>**- Este endpoint busca receitas da API RecipePuppy baseado nos ingredentes passados como query params. <br>**
+>**- Para cada receita uma GIF é buscada do Giphy baseada no titulo da receita. <br>**
+>**- São aceitos no **máximo 3 ingredientes**. <br>**
   
 ``` JSON
 {
