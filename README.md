@@ -8,19 +8,32 @@
   Node.js <br> 
   Docker <br>
   Docker-Compose <br>
+  Chave de acesso Giphy<br>
 </blockquote>
 
+<br>
+
+
+<blockquote>
+
+  ***Obter a chave de acesso(API_KEY) Giphy:*** <br>
+    - criar conta no giphy <br>
+    - acessar https://developers.giphy.com/docs/api/#quick-start-guide <br>
+    - copiar sua **API_KEY**
+</blockquote>
 <br>
 
 ---
 
 
 ## Iniciando Aplicaçao
-  clonar o repositório, extrair os arquivos, acessar a pasta e executar os comandos.<br>
-  <blockquote>
-    npm install<br>
-    docker-compose up<br>
-  </blockquote>
+  **clonar o repositório, extrair os arquivos, acessar a pasta e...<br>**
+  
+> **- Alterar** nome do arquivo **.env_example** para **.env** <br>
+> **- Colar** sua **API_KEY** no **.env** <br>
+> **- Executar** npm install<br>
+> **- Executar** docker-compose up<br>
+  
   
 
 <br>
@@ -28,8 +41,9 @@
 ---
 
 ## Endpoint Disponivel</h2>
->-Este endpoint busca por receitas da **API RecipePuppy** baseado nos ingredentes passados como query params. <br>
->-São aceitos no **máximo 3 ingredientes**. <br>
+>**- Este endpoint busca receitas da API RecipePuppy baseado nos ingredentes passados como query params. <br>**
+>**- Para cada receita uma GIF é buscada do Giphy baseada no titulo da receita. <br>**
+>**- São aceitos no **máximo 3 ingredientes**. <br>**
 ```JSON
 GET: localhost:3000/recipes/?i=param1,param2,param3
 ```
