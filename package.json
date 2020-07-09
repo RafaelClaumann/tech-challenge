@@ -1,0 +1,26 @@
+{
+  "name": "tech-challenge",
+  "version": "1.0.0",
+  "description": "[Descrição do Desafio](https://github.com/RafaelClaumann/tech-challenge/blob/master/DESCRIPTION.md)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RafaelClaumann/tech-challenge.git"
+  },
+  "author": "Rafael Claumann Bernardes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RafaelClaumann/tech-challenge/issues"
+  },
+  "homepage": "https://github.com/RafaelClaumann/tech-challenge#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
