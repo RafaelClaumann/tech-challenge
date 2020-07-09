@@ -41,14 +41,18 @@
 ---
 
 ## Endpoint Disponivel</h2>
-```JSON
-GET: localhost:3000/recipes/?i=param1,param2,param3
-```
 
->**- Este endpoint busca receitas da API RecipePuppy baseado nos ingredentes passados como query params. <br>**
+
+
+>**GET: localhost:3000/recipes/?i=param1,param2,param3 <br>**
+
+>**- Este endpoint busca receitas da API RecipePuppy baseado nos ingredientes passados como query params. <br>**
 >**- Para cada receita uma GIF é buscada do Giphy baseada no titulo da receita. <br>**
 >**- São aceitos no **máximo 3 ingredientes**. <br>**
   
+
+>**Exemplo de response: <br>**
+
 ``` JSON
 {
   "keywords": ["onion", "tomato"],
@@ -66,3 +70,4 @@ GET: localhost:3000/recipes/?i=param1,param2,param3
   ]
 }
 ```
+
