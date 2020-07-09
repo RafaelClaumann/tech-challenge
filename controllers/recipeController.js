@@ -1,4 +1,5 @@
 const puppy = require('../services/recipePuppyApi')
+const giphy = require('../services/giphyApi')
 
 module.exports = {
   async fetch(req, res) {
@@ -14,12 +15,13 @@ module.exports = {
         results.map(async recipe => {
           const ingredients = sortIngredients(recipe.ingredients)
           const title = recipe.title.trim()
+          const gif = await giphy.getGifUrl(title)
 
           return {
             title,
             ingredients,
             link: recipe.href,
-            gif: ''
+            gif
           }
         })
       )
